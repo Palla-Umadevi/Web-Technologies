@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deactivation form</title>
+</head>
+
+<style>
+    form{
+        font-size: 22px;
+        font-style: inherit;
+    }
+</style>
+<body bgcolor="ivory" >
+    <h1 style="text-align: center;"><b>Deactivation Form</b></h1>
+
+<h2>Everyone needs a break once in awhile.</h2>
+
+<p>Hibernating your account is the best option if you'd like to temporarily hide your LinkedIn profile and activity, but not close your account</p>
+
+<h2>Tell us why you want to hibernate your account</h2>
+
+<form action="/submit-reason" method="post">
+  <input type="radio" id="break" name="reason" value="I need a break">
+  <label for="break">I need a break</label><br>
+  
+  <input type="radio" id="emails" name="reason" value="I'm getting too many emails">
+  <label for="emails">I'm getting too many emails</label><br>
+  
+  <input type="radio" id="privacy" name="reason" value="I have a privacy concern">
+  <label for="privacy">I have a privacy concern</label><br>
+  
+  <input type="radio" id="safety" name="reason" value="I have a safety concern">
+  <label for="safety">I have a safety concern</label><br>
+  
+  <input type="radio" id="other" name="reason" value="Other">
+  <label for="other">Other</label><br>
+</form>
+
+<p>We value your feedback, but please note that we aren't able to respond to comments about your account submitted in this form. <br>If you have a question or request about your account that requires attention, please contact us <a href="#">here</a></p>
+
+<textarea style="width: 40%; height: 30%;"></textarea>
+<br>
+
+<input type="submit">
+
+
+    
+</body>
+</html>

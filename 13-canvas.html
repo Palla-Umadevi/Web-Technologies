@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2D Shapes on Canvas</title>
+    <style>
+      body {
+        background-color:plum;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      canvas {
+        border: 2px solid black;
+        background-color:white;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="600" height="400"></canvas>
+
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+
+      // Rectangle
+      ctx.fillStyle = "green";
+      ctx.fillRect(20, 20, 120, 60);
+
+      
+
+      
+      // Ellipse
+      ctx.beginPath();
+      ctx.ellipse(450, 70, 50, 30, 0, 0, Math.PI * 2);
+      ctx.fillStyle = "pink";
+      ctx.fill();
+
+      
+
+      // Circle
+      ctx.beginPath();
+      ctx.arc(200, 50, 40, 0, Math.PI * 2);
+      ctx.fillStyle = "red";
+      ctx.fill();
+
+      // Line
+      ctx.beginPath();
+      ctx.moveTo(30, 150);
+      ctx.lineTo(150, 200);
+      ctx.strokeStyle = "black";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      
+      
+
+ 
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<style>
+    form{
+        margin-left: 10%;
+        font-size: 20px;
+       margin-right: 10%;
+       
+        
+    }
+    fieldset{
+        background-color:lightcyan;
+        width: 95%;
+        height: 50%;
+    }
+    
+    table{
+        margin-left: 18%;
+        border-spacing: 20px;
+        padding: 5px;
+
+    }
+    select{
+        width: 170px;
+        height: 25px;
+    }
+    
+</style>
+<body bgcolor="beige">
+    <h1 style="text-align: center;">Survey Form</h1>
+    <form action="">
+        <fieldset>
+            <h3 style="text-align: center;">Let us know we can improve freeCodeCamp</h3>
+        <table>
+        <tr>
+            <td><label for="firstname">First Name:</label></td>
+        <td><input type="text" id="firstname" name="firstname" required></td></tr>
+     
+        <tr>
+            <td>
+        <label for="lastname">Last Name:</label></td>
+        <td><input type="text" id="lastname" name="lastname" required></td>
+        </tr>
+        
+        <tr>
+        <td><label for="email">Email:      </label></td>
+        <td><input type="email" id="email" name="email" required></td>
+        </tr>
+       
+        <tr>
+            <td>
+        <label for="age">Age:</label></td>
+        <td><input type="text" id="age" name="age"></td>
+        </tr>
+
+        <tr>
+            <td>Which option best describes your current role?</td>
+            <td>
+                <select id="role" name="role" required>
+                <option value="Student" selected>
+                    Student
+                </option>
+                <option value="faculty">
+                    Faculty
+                </option>
+                <option value="other">
+                    Other
+                </option>
+            </select>
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td>How likely is that you would recommend <br>freeCodeCamp to a friend</td>
+            
+            <td>
+                <input type="radio" id="definitely" name="test">
+                <label for="definitely">Definitely</label>
+                <br>
+               <input type="radio" id="Maybe" name="test">
+                <label for="Maybe">Maybe</label>
+                <br>
+                
+                <input type="radio" id="Not sure" name="test">
+                <label for="Not sure">Not sure</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Things that should be improved in the future  </td>
+            <td>
+                <input type="checkbox" id="frontend" name="frontend">
+                <label for="frontend">Front-end Projects</label>
+                <br>
+
+                <input type="checkbox" name="backend" id="backend">
+                <label for="backend">Back-end Projects</label>
+
+                <br>
+
+                <input type="checkbox" id="data" name="data">
+                <label for="data">Data Visualization</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="share">Share your queries to us</label></td>
+                <br>
+                <td><textarea name="share" id="share" placeholder="write your queries here" style="width: 300px; height: 100px;"></textarea></td>
+            
+            
+        </tr>
+        <tr>
+            <td>
+            <input type="submit" id="sub" name="sub" style="width: 500px; height: 30px; margin-left: 20%;" >
+            
+            </td>
+        </tr>
+
+        
+        </table>
+
+        
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>

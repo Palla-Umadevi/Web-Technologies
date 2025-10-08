@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: peachpuff;
+      
+    }
+    h1 {
+      text-align: center;
+      color: red;
+    }
+    form {
+      
+      padding: 20px;
+      border-radius: 10px;
+      margin-left: 10%;
+      margin-right: 10%;
+     
+    }
+    
+    textarea, input[type="text"], input[type="date"], input[type="time"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .submit-btn {
+      text-align: center;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <h1>CUSTOMER FEEDBACK FORM</h1>
+  <form>
+    <fieldset>
+  
+  <p>
+    NSW Fair Trading, a division of the Department of Finance, Services and Innovation supports the NSW 
+    Government’s priority of improving services for the NSW community.
+  </p>
+  <p>Please use this form to give us your suggestions, compliments or complaints. They're important to us.</p>
+
+  <hr>
+    
+    <div>
+      <strong>1. This feedback is a:</strong>
+      <input type="radio" id="suggestion" name="feedback_type" value="suggestion">
+      <label for="suggestion">Suggestion</label>
+
+      <input type="radio" id="compliment" name="feedback_type" value="compliment">
+      <label for="compliment">Compliment</label>
+
+      <input type="radio" id="complaint" name="feedback_type" value="complaint">
+      <label for="complaint">Complaint</label>
+    </div>
+
+   <hr>
+    <div>
+      <strong>2. About which service?</strong><br>
+      <input type="checkbox" id="enquiries" name="service" value="enquiries">
+      <label for="enquiries">enquiries/information</label><br>
+
+      <input type="checkbox" id="complaint_handling" name="service" value="complaint_handling">
+      <label for="complaint_handling">complaint handling/dispute resolution</label><br>
+
+      <input type="checkbox" id="home_building" name="service" value="home_building">
+      <label for="home_building">home building licences</label><br>
+
+      <input type="checkbox" id="business" name="service" value="business">
+      <label for="business">business licences</label><br>
+
+      <input type="checkbox" id="inspections" name="service" value="inspections">
+      <label for="inspections">inspections/investigations</label><br>
+
+      <input type="checkbox" id="tenancy" name="service" value="tenancy">
+      <label for="tenancy">tenancy/rental bonds</label><br>
+
+      <input type="checkbox" id="strata" name="service" value="strata">
+      <label for="strata">strata/strata mediation</label><br>
+
+      <input type="checkbox" id="cooperatives" name="service" value="cooperatives">
+      <label for="cooperatives">co-operatives/associations</label><br>
+
+      <input type="checkbox" id="asbestos" name="service" value="asbestos">
+      <label for="asbestos">loose-fill asbestos implementation taskforce</label><br>
+
+      <input type="checkbox" id="other_service" name="service" value="other">
+      <label for="other_service">other:</label>
+      <input type="text" name="service_other">
+    </div>
+
+    
+    <div>
+      <strong>3. About which issue?</strong><br>
+      <input type="checkbox" id="decision" name="issue" value="decision">
+      <label for="decision">Fair Trading decision, policy or procedure</label><br>
+
+      <input type="checkbox" id="administration" name="issue" value="administration">
+      <label for="administration">administration of legislation</label><br>
+
+      <input type="checkbox" id="accuracy" name="issue" value="accuracy">
+      <label for="accuracy">information accuracy</label><br>
+
+      <input type="checkbox" id="timeliness" name="issue" value="timeliness">
+      <label for="timeliness">timeliness of service</label><br>
+
+      <input type="checkbox" id="staff" name="issue" value="staff">
+      <label for="staff">staff actions/customer service</label><br>
+
+      <input type="checkbox" id="accessibility" name="issue" value="accessibility">
+      <label for="accessibility">accessibility of service</label><br>
+
+      <input type="checkbox" id="fees" name="issue" value="fees">
+      <label for="fees">fees/charges</label><br>
+
+      <input type="checkbox" id="website_issue" name="issue" value="website">
+      <label for="website_issue">website</label><br>
+
+      <input type="checkbox" id="other_issue" name="issue" value="other">
+      <label for="other_issue">other:</label>
+      <input type="text" name="issue_other">
+    </div>
+
+    
+    <div>
+      <strong>4. How did we provide the service?</strong><br>
+      <input type="checkbox" id="phone" name="service_method" value="phone">
+      <label for="phone">phone</label>
+
+      <input type="checkbox" id="website" name="service_method" value="website">
+      <label for="website">website</label>
+
+      <input type="checkbox" id="letter" name="service_method" value="letter">
+      <label for="letter">letter</label>
+
+      <input type="checkbox" id="seminar" name="service_method" value="seminar">
+      <label for="seminar">seminar</label>
+
+      <input type="checkbox" id="email" name="service_method" value="email">
+      <label for="email">email</label>
+
+      <input type="checkbox" id="other_method" name="service_method" value="other">
+      <label for="other_method">other:</label>
+      <input type="text" name="method_other"><br><br>
+
+      <label for="phone_number">Phone number called (if appropriate):</label>
+      <input type="text" id="phone_number" name="phone_number"><br><br>
+
+      <label for="officer">Name of Fair Trading officer (if appropriate):</label>
+      <input type="text" id="officer" name="officer">
+    </div>
+
+    
+    <div>
+      <strong>5. When did we provide the service?</strong><br>
+      <label for="date">Date of service:</label>
+      <input type="date" id="date" name="date">
+      
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time">
+    </div>
+
+   
+    <div>
+      <strong>6. Are you:</strong><br>
+      <input type="radio" id="trader" name="role" value="trader">
+      <label for="trader">a trader</label>
+
+      <input type="radio" id="consumer" name="role" value="consumer">
+      <label for="consumer">a consumer</label>
+
+      <input type="radio" id="other_role" name="role" value="other">
+      <label for="other_role">providing feedback on behalf of someone else</label>
+    </div>
+
+   
+    <div>
+      <strong>7. Please write details of your feedback here:</strong><br>
+      <textarea id="feedback" name="feedback"></textarea>
+    </div>
+
+    <div class="submit-btn">
+      <button type="submit">Submit Feedback</button>
+    </div>
+    </fieldset>
+  </form>
+
+</body>
+</html>
